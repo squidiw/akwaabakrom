@@ -7,10 +7,21 @@
       a{
           text-decoration: none;
           overflow: hidden;
+          
+
+          &:hover{
+              h1{
+                  transition: all 0.2s ease-out;
+                  transform: scale(1.1);
+                  
+              }
+          }
+         
       }
 
       .box{
           min-height: 300px;
+
       }
 
       &__text{
@@ -21,6 +32,7 @@
           
           color: white;
           text-transform: uppercase;
+          
       }
 
       .visas {
@@ -30,6 +42,8 @@
             ),
             url(../img/visa-img__homepage.jpg) no-repeat center;
          background-size: cover;
+
+         
          
         }
 

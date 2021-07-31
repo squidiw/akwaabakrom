@@ -60,6 +60,11 @@ ol, ul {
   overflow: hidden;
 }
 
+.homepage-menu a:hover h1 {
+  transition: all 0.2s ease-out;
+  transform: scale(1.1);
+}
+
 .homepage-menu .box {
   min-height: 300px;
 }
@@ -180,6 +185,15 @@ ol, ul {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.itinerary-overview .card {
+  transition: all ease-out 0.15s;
+  border-radius: 15px;
+}
+
+.itinerary-overview .card:hover {
+  box-shadow: 0px 0px 4px 5px #EBEBEB;
 }
 
 .location-table {
