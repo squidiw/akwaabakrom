@@ -157,7 +157,7 @@ ol, ul {
 
 .visa-hero .visa-hero-img {
   height: 70vh;
-  background: url(img/visas-hero-img.jpg);
+  background: url(../img/visas-hero-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -169,7 +169,7 @@ ol, ul {
 
 .itinerary-hero .itinerary-hero-img {
   min-height: 75vh;
-  background: url(img/itinerary-hero-img.jpg);
+  background: url(../img/itinerary-hero-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -228,12 +228,12 @@ ol, ul {
   background-position: top;
   background-repeat: no-repeat;
   background-position: contain;
-  background-image: url(img/help-hero-mobile.jpg);
+  background-image: url(../img/help-hero-mobile.jpg);
 }
 
 @media (min-width: 40em) {
   .help-hero {
     background-position: center center;
-    background-image: url(img/help-hero.jpg);
+    background-image: url(../img/help-hero.jpg);
   }
 }
