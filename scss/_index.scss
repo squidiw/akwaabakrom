@@ -1,0 +1,124 @@
+.homepage {
+   &-menu {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr;
+
+      a{
+          text-decoration: none;
+          overflow: hidden;
+      }
+
+      .box{
+          min-height: 300px;
+      }
+
+      &__text{
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          text-transform: uppercase;
+      }
+
+      .visas {
+         background: linear-gradient(
+               rgba(0, 0, 0, 0.6),
+               rgba(0, 0, 0, 0.6)
+            ),
+            url(/img/visa-img__homepage.jpg) no-repeat center;
+         background-size: cover;
+         
+        }
+
+        .itinerary{
+            background: linear-gradient(
+               rgba(0, 0, 0, 0.6),
+               rgba(0, 0, 0, 0.6)
+            ),
+            url(/img/itinerary-img__homepage.jpg) no-repeat center;
+         background-size: cover;
+        }
+
+        .plan-trip{
+            background: linear-gradient(
+               rgba(0, 0, 0, 0.6),
+               rgba(0, 0, 0, 0.6)
+            ),
+            url(/img/plan-trip-img__homepage.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        .help{
+            background: linear-gradient(
+               rgba(0, 0, 0, 0.6),
+               rgba(0, 0, 0, 0.6)
+            ),
+            url(/img/help-1.jpg) no-repeat center;
+         background-size: cover;
+        }
+
+        .logo{
+            display: none;
+            background-color: green;
+        }
+
+        /*===== MEDIA QUERIES FOR HOMEPAGE  =====*/
+
+        @media(min-width: 45em){
+            grid-template-columns: repeat(2,1fr);
+
+          .box{
+              min-height: 50px;
+          }
+
+          .help{
+              background-size: cover;
+          }
+
+          .logo{
+              display: none;
+          }
+        }
+
+
+        @media (min-width:60em) {
+            grid-template-columns: repeat(4, 1fr);
+
+            h1{
+                font-size: 3rem;
+            }
+        .visas {
+            background-position: bottom;
+            background-size: cover;
+            grid-column: 1 / span 2;
+            grid-row: 1;
+         }
+         .itinerary {
+            background-position: bottom;
+            background-size: cover;
+            grid-column: 3 / span 4;
+            grid-row: 1;
+         }
+         .plan-trip {
+            background-position: center;
+            background-size: cover;
+            grid-column: 1 / span 2;
+            grid-row: 2;
+         }
+         .help {
+            background-position: bottom;
+            background-size: cover;
+            grid-column: 3 / span 1;
+            grid-row: 2;
+         }
+         .logo {
+             display: block;
+            background-color: green;
+            grid-column: 4 / span 1;
+         }
+
+        }
+   }
+}
