@@ -1,15 +1,15 @@
-.help-hero{
-    min-height: 70vh;    
-    background-position: top;
-    background-repeat: no-repeat;
-    background-position: contain;
-    background-image: url(/img/help-hero-mobile.jpg);
-    // background-color: black;
+.help-hero {
+   min-height: 70vh;
+   background-position: top;
+   background-repeat: no-repeat;
+   background-position: contain;
+   background-image: url(img/help-hero-mobile.jpg);
+   // background-color: black;
 }
 
-@media (min-width:40em) {
-    .help-hero{
-        background-position: center center;
-        background-image: url(/img/help-hero.jpg);
-    }
+@media (min-width: 40em) {
+   .help-hero {
+      background-position: center center;
+      background-image: url(img/help-hero.jpg);
+   }
 }

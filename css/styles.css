@@ -1,239 +1,244 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  font-family: 'Inter', sans-serif;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   font-family: "Inter", sans-serif;
 }
 
 h1 {
-  font-size: 1.8rem;
-  text-transform: capitalize;
-  font-weight: bold;
-  font-family: 'Inter', sans-serif;
+   font-size: 1.8rem;
+   text-transform: capitalize;
+   font-weight: bold;
+   font-family: "Inter", sans-serif;
 }
 
 h2 {
-  font-weight: bold;
+   font-weight: bold;
 }
 
 p {
-  font-size: 1rem;
-  font-family: 'Inter', sans-serif;
+   font-size: 1rem;
+   font-family: "Inter", sans-serif;
 }
 
-ol, ul {
-  list-style-position: inside;
+ol,
+ul {
+   list-style-position: inside;
 }
 
 .light {
-  background-color: #f8f9fa;
+   background-color: #f8f9fa;
 }
 
 @media (min-width: 40em) {
-  h1 {
-    font-size: 2rem;
-  }
-  p {
-    font-size: 1.1rem;
-  }
+   h1 {
+      font-size: 2rem;
+   }
+   p {
+      font-size: 1.1rem;
+   }
 }
 
 @media (min-width: 60em) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  p {
-    font-size: 1.125rem;
-  }
+   h1 {
+      font-size: 2.5rem;
+   }
+   p {
+      font-size: 1.125rem;
+   }
 }
 
 .homepage-menu {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  /*===== MEDIA QUERIES FOR HOMEPAGE  =====*/
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: 1fr;
+   /*===== MEDIA QUERIES FOR HOMEPAGE  =====*/
 }
 
 .homepage-menu a {
-  text-decoration: none;
-  overflow: hidden;
+   text-decoration: none;
+   overflow: hidden;
 }
 
 .homepage-menu .box {
-  min-height: 300px;
+   min-height: 300px;
 }
 
 .homepage-menu__text {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-transform: uppercase;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   text-transform: uppercase;
 }
 
 .homepage-menu .visas {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/visa-img__homepage.jpg) no-repeat center;
-  background-size: cover;
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(img/visa-img__homepage.jpg) no-repeat center;
+   background-size: cover;
 }
 
 .homepage-menu .itinerary {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/itinerary-img__homepage.jpg) no-repeat center;
-  background-size: cover;
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(img/itinerary-img__homepage.jpg) no-repeat center;
+   background-size: cover;
 }
 
 .homepage-menu .plan-trip {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/plan-trip-img__homepage.jpg) no-repeat center;
-  background-size: cover;
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(img/plan-trip-img__homepage.jpg) no-repeat center;
+   background-size: cover;
 }
 
 .homepage-menu .help {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/help-1.jpg) no-repeat center;
-  background-size: cover;
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(img/help-1.jpg) no-repeat center;
+   background-size: cover;
 }
 
 .homepage-menu .logo {
-  display: none;
-  background-color: green;
+   display: none;
+   background-color: green;
 }
 
 @media (min-width: 45em) {
-  .homepage-menu {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .homepage-menu .box {
-    min-height: 50px;
-  }
-  .homepage-menu .help {
-    background-size: cover;
-  }
-  .homepage-menu .logo {
-    display: none;
-  }
+   .homepage-menu {
+      grid-template-columns: repeat(2, 1fr);
+   }
+   .homepage-menu .box {
+      min-height: 50px;
+   }
+   .homepage-menu .help {
+      background-size: cover;
+   }
+   .homepage-menu .logo {
+      display: none;
+   }
 }
 
 @media (min-width: 60em) {
-  .homepage-menu {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .homepage-menu h1 {
-    font-size: 3rem;
-  }
-  .homepage-menu .visas {
-    background-position: bottom;
-    background-size: cover;
-    grid-column: 1 / span 2;
-    grid-row: 1;
-  }
-  .homepage-menu .itinerary {
-    background-position: bottom;
-    background-size: cover;
-    grid-column: 3 / span 4;
-    grid-row: 1;
-  }
-  .homepage-menu .plan-trip {
-    background-position: center;
-    background-size: cover;
-    grid-column: 1 / span 2;
-    grid-row: 2;
-  }
-  .homepage-menu .help {
-    background-position: bottom;
-    background-size: cover;
-    grid-column: 3 / span 1;
-    grid-row: 2;
-  }
-  .homepage-menu .logo {
-    display: block;
-    background-color: green;
-    grid-column: 4 / span 1;
-  }
+   .homepage-menu {
+      grid-template-columns: repeat(4, 1fr);
+   }
+   .homepage-menu h1 {
+      font-size: 3rem;
+   }
+   .homepage-menu .visas {
+      background-position: bottom;
+      background-size: cover;
+      grid-column: 1 / span 2;
+      grid-row: 1;
+   }
+   .homepage-menu .itinerary {
+      background-position: bottom;
+      background-size: cover;
+      grid-column: 3 / span 4;
+      grid-row: 1;
+   }
+   .homepage-menu .plan-trip {
+      background-position: center;
+      background-size: cover;
+      grid-column: 1 / span 2;
+      grid-row: 2;
+   }
+   .homepage-menu .help {
+      background-position: bottom;
+      background-size: cover;
+      grid-column: 3 / span 1;
+      grid-row: 2;
+   }
+   .homepage-menu .logo {
+      display: block;
+      background-color: green;
+      grid-column: 4 / span 1;
+   }
 }
 
 .visa-hero {
-  min-height: 80vh;
+   min-height: 80vh;
 }
 
 .visa-hero .visa-hero-img {
-  height: 70vh;
-  background: url(/img/visas-hero-img.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+   height: 70vh;
+   background: url(img/visas-hero-img.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
 }
 
 .itinerary-hero {
-  min-height: 80vh;
+   min-height: 80vh;
 }
 
 .itinerary-hero .itinerary-hero-img {
-  min-height: 75vh;
-  background: url(/img/itinerary-hero-img.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+   min-height: 75vh;
+   background: url(img/itinerary-hero-img.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
 }
 
 .itinerary-overview {
-  min-height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   min-height: 60vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .location-table {
-  margin: auto;
+   margin: auto;
 }
 
 @media (max-width: 39em) {
-  .stay-locations-btn {
-    display: none;
-  }
-  .shopping-and-restaurant-btn {
-    display: none;
-  }
-  #shopping-and-restaurant {
-    display: none;
-  }
-  #stay-locations {
-    display: none;
-  }
+   .stay-locations-btn {
+      display: none;
+   }
+   .shopping-and-restaurant-btn {
+      display: none;
+   }
+   #shopping-and-restaurant {
+      display: none;
+   }
+   #stay-locations {
+      display: none;
+   }
 }
 
 @media (min-width: 40em) {
-  .stay-locations-mobile-btn {
-    display: none;
-  }
-  .shopping-and-restaurant-mobile-btn {
-    display: none;
-  }
-  #stay-locations-mobile {
-    display: none;
-  }
-  #shopping-and-restaurant-mobile {
-    display: none;
-  }
+   .stay-locations-mobile-btn {
+      display: none;
+   }
+   .shopping-and-restaurant-mobile-btn {
+      display: none;
+   }
+   #stay-locations-mobile {
+      display: none;
+   }
+   #shopping-and-restaurant-mobile {
+      display: none;
+   }
 }
 
 .plan-trip-hero {
-  min-height: 40vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   min-height: 40vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .help-hero {
-  min-height: 70vh;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-position: contain;
-  background-image: url(/img/help-hero-mobile.jpg);
+   min-height: 70vh;
+   background-position: top;
+   background-repeat: no-repeat;
+   background-position: contain;
+   background-image: url(img/help-hero-mobile.jpg);
 }
 
 @media (min-width: 40em) {
-  .help-hero {
-    background-position: center center;
-    background-image: url(/img/help-hero.jpg);
-  }
+   .help-hero {
+      background-position: center center;
+      background-image: url(img/help-hero.jpg);
+   }
 }
