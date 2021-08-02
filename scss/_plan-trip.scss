@@ -1,6 +1,42 @@
 .plan-trip-hero{
-    min-height: 40vh;
+    min-height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+.plan-trip-socials{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.travel-agencies{
+    min-height: 100vh;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+
+}
+
+@media (min-width:40em) {
+    .travel-agencies{
+        min-height: 50vh;
+        border-bottom-left-radius: 50% 40%;
+        border-bottom-right-radius: 50% 40%;
+    }
+}
+
+@media (min-width:60em) {
+    .travel-agencies{
+        min-height: 75vh;
+    border-bottom-left-radius: 50% 40%;
+    border-bottom-right-radius: 50% 40%;
+    }
+}
+
+// @media (min-width:1024px) {
+//     .travel-agencies{
+//         min-height: 50vh;
+//     }
+// }
