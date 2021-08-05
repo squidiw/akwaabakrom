@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+      <title>The Traveling Resource For Your Ghana Trip.</title>
       <meta charset="UTF-8" />
+      <meta name="description" content="Get all information on how to travel to Ghana, tourist attractions and best locations to stay" />
+      <meta property="og:title" content="Get All Information On Tourist Sites In Ghana And Their Locations.">
+      <meta property="og:description" content="A comprehensive list of tourist destinations, best locations to stay whiles in Ghana and all shopping malls and centers.">
+      <meta property="og:url" content="https://akwaabakrom.com">
+      <meta property="og:type" content="website">
+
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+      <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+      <link rel="manifest" href="img/favicon/site.webmanifest">
+
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>
-         Home - Akwaabakrom Ghana Travel Resource.
-      </title>
       <link rel="stylesheet" href="css/styles.css" />
+      <link rel="stylesheet" href="css/preloader.css" />
    </head>
    <body>
+      <div id="loader-wrapper">
+         <div id="loader"></div>
+
+         <div class="loader-section section-left"></div>
+         <div class="loader-section section-right"></div>
+      </div>
+
       <div class="homepage">
          <div class="homepage-menu">
             <a class="visas box" href="visas.html">
@@ -27,4 +45,13 @@
          </div>
       </div>
    </body>
+
+   <script src="js/jquery-3.5.1.min.js"></script>
+   <script>
+      $(document).ready(function () {
+         setTimeout(function () {
+            $("body").addClass("loaded");
+         }, 3000);
+      });
+   </script>
 </html>
