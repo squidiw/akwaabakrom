@@ -39,6 +39,10 @@ ol, ul {
   border-radius: 15px;
 }
 
+button {
+  overflow: hidden;
+}
+
 a {
   color: #dc3545;
 }
